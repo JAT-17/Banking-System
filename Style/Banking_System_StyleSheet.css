@@ -1,0 +1,53 @@
+﻿body {
+}
+
+
+
+
+
+/*Site Master*/
+
+#Main{
+    align-content:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin-top: 20px;
+    height:450px;
+   
+}
+
+.navbar {
+    background-color: darkslateblue;
+}
+
+.navbar-collapse collapse {
+    color: black;
+  
+}
+
+
+.SignUp Container
+{
+  width:100px;
+ background-color:aquamarine
+
+}
+
+
+.navbar-brand {
+    background-color: greenyellow;
+    border-bottom-left-radius: 90%;
+    border-bottom-right-radius: 90%;
+    border-top-left-radius: 90%;
+    border-top-right-radius: 90%;
+}
+
+    .navbar-brand:hover {
+        background: linear-gradient(to left,greenyellow, greenyellow);
+        color: black !IMPORTANT;
+        border-bottom-right-radius: 0%;
+        border-bottom-left-radius: 0%;
+        border-top-left-radius: 0%;
+        border-top-right-radius: 0%;
+        transition: 190ms;
+    }
