@@ -166,6 +166,8 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="Client Form.aspx" />
+    <Content Include="ClientFormJAT.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -187,7 +189,9 @@
     <Content Include="Account\Web.config" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Images\3.jpg" />
+    <Content Include="Images\clientFormBackground.png" />
     <Content Include="Images\Home Page Main Image.jpg" />
+    <Content Include="LoanPayment.aspx" />
     <Content Include="Style\Banking_System_StyleSheet.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -340,6 +344,20 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Client Form.aspx.cs">
+      <DependentUpon>Client Form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Client Form.aspx.designer.cs">
+      <DependentUpon>Client Form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClientFormJAT.aspx.cs">
+      <DependentUpon>ClientFormJAT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientFormJAT.aspx.designer.cs">
+      <DependentUpon>ClientFormJAT.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -356,6 +374,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="LoanPayment.aspx.cs">
+      <DependentUpon>LoanPayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoanPayment.aspx.designer.cs">
+      <DependentUpon>LoanPayment.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
