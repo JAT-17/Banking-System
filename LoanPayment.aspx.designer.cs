@@ -11,70 +11,70 @@ namespace Banking_System
 {
 
 
-    public partial class LoanPayment
+    public partial class LoanPayment1
     {
 
         /// <summary>
-        /// Table1 control.
+        /// AccountNum_Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Table Table1;
+        protected global::System.Web.UI.WebControls.Label AccountNum_Label;
 
         /// <summary>
-        /// Label1 control.
+        /// TRN_TextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.TextBox TRN_TextBox;
 
         /// <summary>
-        /// TextBox1 control.
+        /// BranchID_Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.Label BranchID_Label;
 
         /// <summary>
-        /// Label9 control.
+        /// BranchID_TextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label9;
+        protected global::System.Web.UI.WebControls.TextBox BranchID_TextBox;
 
         /// <summary>
-        /// TextBox2 control.
+        /// PaymentAmount_Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.Label PaymentAmount_Label;
 
         /// <summary>
-        /// ButtonAddC control.
+        /// FirstName_TextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ButtonAddC;
+        protected global::System.Web.UI.WebControls.TextBox FirstName_TextBox;
 
         /// <summary>
-        /// Button2 control.
+        /// ClientFormContainerSubmitButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button2;
+        protected global::System.Web.UI.WebControls.Button ClientFormContainerSubmitButton;
     }
 }

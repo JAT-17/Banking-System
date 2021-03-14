@@ -2,22 +2,7 @@
 }
 
 
-
-
-
-/*Default*/
-
-#DefaultPageMainImage {
-    align-content: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 20px;
-    height: 450px;
-    width: 1000px;
-    margin: 0px auto;
-    background-image: url(../Images/3.jpg)
-}
-
+/*----Master Page---------------------------------------------------------------------------------------------------*/
 .navbar-brand {
     background-color: chartreuse;
     border-bottom-left-radius: 90%;
@@ -26,7 +11,7 @@
     border-top-right-radius: 90%;
 }
 
-.navbar-header >a {
+.navbar-header > a {
     color: black !IMPORTANT;
 }
 
@@ -42,20 +27,36 @@
 
 .JATnavbar {
     background-color: royalblue;
-    text-transform:uppercase;
+    text-transform: uppercase;
 }
 
 /*Nav bar text color*/
 .navbar-inverse .navbar-nav > li > a {
     color: black;
-    font-weight:600;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/*Client Form*/
+
+/*----Default---------------------------------------------------------------------------------------------------*/
+
+#DefaultPageMainImage {
+    align-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 20px;
+    height: 450px;
+    width: 1000px;
+    margin: 0px auto;
+    background-image: url(../Images/3.jpg)
+}
 
 
-div.ClientFormContainer {
+
+/*----Client Form---------------------------------------------------------------------------------------------------*/
+
+
+div.FormContainer {
     margin: 0px auto;
     width: 62%;
     background-image: url('../Images/clientFormBackground.png');
@@ -64,7 +65,7 @@ div.ClientFormContainer {
     font-weight:600;
 }
 
-section.ClientFormContainerTitle{
+section.FormContainerTitle{
     margin: 0px auto;
     background-color: chartreuse;
     width: auto;
@@ -75,14 +76,13 @@ section.ClientFormContainerTitle{
 
 }
 
-.ClientFormSection_Datainput
+.FormSection_Datainput
 {
     margin-left:100px;
-
-
+    width:auto;
 }
 
-section.ClientFormContainerSubmit {
+section.FormContainerSubmit {
     margin: 0px auto;
     background-color: chartreuse;
     width: auto;
@@ -98,8 +98,30 @@ section.ClientFormContainerSubmit {
 
 
 
-.ClientFormLabel {
-    width: 100px;
+.FormLabel {
+    width: 150px;
     display: inline-block;
 }
 
+/*----Customer Search---------------------------------------------------------------------------------------------------*/
+section.CustomerSearchTitle {
+    margin: 0px auto;
+    background-color: chartreuse;
+    width: auto;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-weight: 200;
+}
+
+
+section.CustomerSearchSubmit {
+    margin: 0px auto;
+    background-color: chartreuse;
+    width: auto;
+    text-align: center;
+    padding: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+}

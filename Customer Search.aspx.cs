@@ -7,11 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace Banking_System
 {
-	public partial class LoanPayment1 : System.Web.UI.Page
-	{
-		protected void Page_Load(object sender, EventArgs e)
-		{
+    public partial class Customer_Search : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
 
-		}
-	}
+        }
+    }
 }
