@@ -192,7 +192,9 @@
     <Content Include="Images\3.jpg" />
     <Content Include="Images\clientFormBackground.png" />
     <Content Include="Images\Home Page Main Image.jpg" />
+    <Content Include="Images\SearchResultBackground.png" />
     <Content Include="LoanPayment.aspx" />
+    <Content Include="Login.aspx" />
     <Content Include="Style\Banking_System_StyleSheet.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -390,6 +392,14 @@
     <Compile Include="LoanPayment.aspx.designer.cs">
       <DependentUpon>LoanPayment.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBox.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">

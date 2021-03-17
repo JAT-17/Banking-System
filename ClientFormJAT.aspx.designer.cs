@@ -33,6 +33,24 @@ namespace Banking_System
         protected global::System.Web.UI.WebControls.TextBox TRN_TextBox;
 
         /// <summary>
+        /// RequiredFieldValidatorTRN control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorTRN;
+
+        /// <summary>
+        /// RegularExpressionValidatorTRN control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidatorTRN;
+
+        /// <summary>
         /// BranchID_Label control.
         /// </summary>
         /// <remarks>
@@ -49,6 +67,15 @@ namespace Banking_System
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox BranchID_TextBox;
+
+        /// <summary>
+        /// RequiredFieldValidatorBranchID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorBranchID;
 
         /// <summary>
         /// FirstName_Label control.
@@ -69,6 +96,15 @@ namespace Banking_System
         protected global::System.Web.UI.WebControls.TextBox FirstName_TextBox;
 
         /// <summary>
+        /// RequiredFieldValidatorFirstName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorFirstName;
+
+        /// <summary>
         /// LastName_Label control.
         /// </summary>
         /// <remarks>
@@ -78,13 +114,22 @@ namespace Banking_System
         protected global::System.Web.UI.WebControls.Label LastName_Label;
 
         /// <summary>
-        /// LastNameTextBox1 control.
+        /// LastNameTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox LastNameTextBox1;
+        protected global::System.Web.UI.WebControls.TextBox LastNameTextBox;
+
+        /// <summary>
+        /// RequiredFieldValidatorLastName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorLastName;
 
         /// <summary>
         /// Address_Label control.
@@ -105,6 +150,15 @@ namespace Banking_System
         protected global::System.Web.UI.WebControls.TextBox Address_TextBox;
 
         /// <summary>
+        /// RequiredFieldValidatorAddress control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorAddress;
+
+        /// <summary>
         /// DOB_Label control.
         /// </summary>
         /// <remarks>
@@ -121,6 +175,15 @@ namespace Banking_System
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox DOB_TextBox;
+
+        /// <summary>
+        /// RequiredFieldValidatorDOB control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorDOB;
 
         /// <summary>
         /// email_Label control.
@@ -141,6 +204,15 @@ namespace Banking_System
         protected global::System.Web.UI.WebControls.TextBox Email_TextBox;
 
         /// <summary>
+        /// RegularExpressionValidatorEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidatorEmail;
+
+        /// <summary>
         /// IDType_Label control.
         /// </summary>
         /// <remarks>
@@ -157,6 +229,15 @@ namespace Banking_System
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+
+        /// <summary>
+        /// RequiredFieldValidatorIDType control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorIDType;
 
         /// <summary>
         /// ID_Labe control.
@@ -177,6 +258,15 @@ namespace Banking_System
         protected global::System.Web.UI.WebControls.TextBox ID_TextBox;
 
         /// <summary>
+        /// RequiredFieldValidatorID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorID;
+
+        /// <summary>
         /// Contact_Label control.
         /// </summary>
         /// <remarks>
@@ -193,6 +283,15 @@ namespace Banking_System
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Contact_TextBox;
+
+        /// <summary>
+        /// RegularExpressionValidatorContact control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidatorContact;
 
         /// <summary>
         /// Referee_Label control.
@@ -220,5 +319,14 @@ namespace Banking_System
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button ClientFormContainerSubmitButton;
+
+        /// <summary>
+        /// ClientFormSubmitResult control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ClientFormSubmitResult;
     }
 }

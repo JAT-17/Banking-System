@@ -33,12 +33,30 @@ namespace Banking_System
         protected global::System.Web.UI.WebControls.TextBox TRN_TextBox;
 
         /// <summary>
-        /// ClientFormContainerSubmitButton control.
+        /// RegularExpressionValidatorTRNCustomerSearch control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ClientFormContainerSubmitButton;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidatorTRNCustomerSearch;
+
+        /// <summary>
+        /// CustomerSearchSubmitButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button CustomerSearchSubmitButton;
+
+        /// <summary>
+        /// GridView1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GridView1;
     }
 }

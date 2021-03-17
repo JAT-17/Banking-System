@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
+using System.Data.SqlClient;
 using System.Web.UI.WebControls;
 
 namespace Banking_System
@@ -13,5 +14,43 @@ namespace Banking_System
         {
 
         }
+
+        protected void ClientFormContainerSubmitButton_Click(object sender, EventArgs e)
+        {
+            if (Page.IsValid) /* This is for server side validation if the client side validation is disabled*/
+            {
+
+                SqlConnection con = new SqlConnection("data source =.; database = Banking_System; integrated security=SSPI");
+                try
+                {
+                    SqlCommand cmd = new SqlCommand
+                   ("Execute sp_insert_customer  '" + TRN_TextBox.Text + "','" + BranchID_TextBox.Text + "' ,'" + FirstName_TextBox.Text + "'," +
+                   "'" + LastNameTextBox.Text + "','" + Address_TextBox.Text + "' ,'" + DOB_TextBox.Text + "',    " +
+                   "'" + Email_TextBox.Text + "' ,'" + DropDownList1.SelectedValue + "','" + ID_TextBox.Text + "' ," +
+                   "'" + Contact_TextBox.Text + "' ,'" + Referee_TextBox.Text + "' ", con);
+                    con.Open();
+                    SqlDataReader rdr = cmd.ExecuteReader();
+
+                    ClientFormSubmitResult.Text = "Data saved sucessfully";
+                }
+
+                catch
+                {
+
+
+                }
+                finally
+                {
+                    con.Close();
+
+                }
+
+            }else
+                {
+                ClientFormSubmitResult.Text = "Data not saved sucessfully";
+            }
+        }    
+       
+        
     }
 }

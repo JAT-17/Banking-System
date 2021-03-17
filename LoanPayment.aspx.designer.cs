@@ -24,31 +24,22 @@ namespace Banking_System
         protected global::System.Web.UI.WebControls.Label AccountNum_Label;
 
         /// <summary>
-        /// TRN_TextBox control.
+        /// AccountNumber_TextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TRN_TextBox;
+        protected global::System.Web.UI.WebControls.TextBox AccountNumber_TextBox;
 
         /// <summary>
-        /// BranchID_Label control.
+        /// RequiredFieldValidatorAccountNumber control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label BranchID_Label;
-
-        /// <summary>
-        /// BranchID_TextBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox BranchID_TextBox;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorAccountNumber;
 
         /// <summary>
         /// PaymentAmount_Label control.
@@ -60,13 +51,22 @@ namespace Banking_System
         protected global::System.Web.UI.WebControls.Label PaymentAmount_Label;
 
         /// <summary>
-        /// FirstName_TextBox control.
+        /// PaymentAmount_TextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox FirstName_TextBox;
+        protected global::System.Web.UI.WebControls.TextBox PaymentAmount_TextBox;
+
+        /// <summary>
+        /// RequiredFieldValidatorPaymentAmount control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorPaymentAmount;
 
         /// <summary>
         /// ClientFormContainerSubmitButton control.
@@ -76,5 +76,14 @@ namespace Banking_System
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button ClientFormContainerSubmitButton;
+
+        /// <summary>
+        /// Output_Message control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Output_Message;
     }
 }
