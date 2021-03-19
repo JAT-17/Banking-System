@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.UI;
 using System.Data.SqlClient;
 using System.Web.UI.WebControls;
+using System.Configuration;
+using Tulpep.NotificationWindow;
 
 namespace Banking_System
 {
@@ -18,8 +20,8 @@ namespace Banking_System
 
         protected void CustomerSearchSubmitButton_Click(object sender, EventArgs e)
         {
-
-            SqlConnection con = new SqlConnection("data source =.; database = Banking_System; integrated security=SSPI");
+            string CS = ConfigurationManager.ConnectionStrings["Banking_SystemConnectionString"].ConnectionString;
+            SqlConnection con = new SqlConnection(CS);
             try
             {
                 SqlCommand cmd = new SqlCommand("Execute sp_Find_customer '" + TRN_TextBox.Text + "'", con);
@@ -30,15 +32,14 @@ namespace Banking_System
 
                 if(rdr.HasRows)
 
-                {
-                    while (rdr.Read())
-                    {
-                        Response.Write("<script>alert('Saved');</script>");
-                    }
+                {                    
+                        SearchResult.Text="RECORD FOUND";
                 }
                 else
                 {
-                    Response.Write("<script>alert('Customer Not Found');</script>");
+                    
+                    SearchResult.Text = "RECORD NOT FOUND";
+                    //TRN_TextBox.Text = ""; /*this will clear the TRN field after the query runs*/
                 }
 
             }

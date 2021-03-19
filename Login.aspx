@@ -41,7 +41,7 @@
                                 <div class="form-group">
                                     <asp:TextBox ID="TxtPassword" CssClass="form-control" runat="server" placeholder="Password" TextMode="Password"  ></asp:TextBox>
                                 </div>
-
+                                 <asp:Button class="btn btn-info btn-block btn-lg" ID="CustomerSearchSubmitButton" runat="server" Text="Login Test" OnClick="CustomerSearchSubmitButton_Click" />
                                  <input class="btn btn-info btn-block btn-lg" id="Login" type="button" value="Login" />
                                 
                                 <br />

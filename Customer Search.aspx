@@ -26,6 +26,7 @@
         <section class="FormContainerSubmit">
             <section class="SubmitButton">
                 <asp:Button ID="CustomerSearchSubmitButton" runat="server" Text="SERACH" OnClick="CustomerSearchSubmitButton_Click" />
+                <asp:Label ID="SearchResult" runat="server"  CssClass="ClientFormSubmitResult" ></asp:Label>
             </section>
         </section>
     </div>
@@ -34,10 +35,10 @@
     <br />
     <br />
     
-    <div class="FormContainerResults">
+    <%--<div class="FormContainerResults">
         <section class="FormContainerTitle">
             <h2 class="Title">Search Result</h2>
-        </section>
+        </section> --%>
                    
 
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="TRN" CssClass="CustomerSearchResultgridview">
@@ -55,22 +56,9 @@
                 <asp:BoundField DataField="PhoneNumber" HeaderText="  Phone Number  " SortExpression="PhoneNumber" />
             </Columns>
         </asp:GridView>
-    </div>
+   <%-- </div> --%>
     
 
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
     <br />
     <br />
     <br />

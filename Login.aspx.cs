@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data.SqlClient;
+using System.Configuration;
 
 namespace Banking_System
 {
@@ -11,6 +13,13 @@ namespace Banking_System
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
+        }
+
+        protected void CustomerSearchSubmitButton_Click(object sender, EventArgs e)
+        {
+
+            
 
         }
     }

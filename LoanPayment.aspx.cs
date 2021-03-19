@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace Banking_System
 {
@@ -20,7 +21,8 @@ namespace Banking_System
             if (Page.IsValid) /* This is for server side validation if the client side validation is disabled*/
             {
 
-                SqlConnection con = new SqlConnection("data source =.; database = Banking_System; integrated security=SSPI");
+                string CS = ConfigurationManager.ConnectionStrings["Banking_SystemConnectionString"].ConnectionString;
+                SqlConnection con = new SqlConnection(CS);
                 try
                 {
                     SqlCommand cmd = new SqlCommand

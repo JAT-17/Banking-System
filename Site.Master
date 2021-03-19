@@ -80,7 +80,7 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - Advance Database </p>
+                <p>&copy; <%: DateTime.Now.Year %> - Advance Database - Group A </p>
             </footer>
         </div>
     </form>
