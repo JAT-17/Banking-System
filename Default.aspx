@@ -34,7 +34,7 @@
         <div class="col-md-6">
             
             <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Welcome &raquo;</a>
+                <a class="btn btn-default" href="login">Welcome &raquo;</a>
             </p>
         </div>
         

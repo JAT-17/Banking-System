@@ -194,6 +194,7 @@
     <None Include="Properties\PublishProfiles\Default Settings.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Images\3.jpg" />
+    <Content Include="Images\About.jpg" />
     <Content Include="Images\clientFormBackground.png" />
     <Content Include="Images\Home Page Main Image.jpg" />
     <Content Include="Images\SearchResultBackground.png" />
