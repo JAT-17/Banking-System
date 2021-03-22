@@ -42,7 +42,7 @@
                                     <asp:TextBox ID="TxtPassword" CssClass="form-control" runat="server" placeholder="Password" TextMode="Password"  ></asp:TextBox>
                                 </div>
                                  <asp:Button class="btn btn-info btn-block btn-lg" ID="Login_Button" runat="server" Text="Login" OnClick="Login_Button_Click" />
-                                
+                                <asp:Label ID="LoginResult" runat="server" CssClass="ClientFormSubmitResult"> </asp:Label>
                                 
                                 <br />
                                  <div class="form-group">

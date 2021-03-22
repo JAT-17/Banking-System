@@ -162,3 +162,11 @@ section.CustomerSearchSubmit {
     margin: 0px auto;
     background-image: url(../Images/About.jpg)
 }
+
+
+/*----Dashboard---------------------------------------------------------------------------------------------------*/
+div.DashBoardleft {
+    background-color: chartreuse;
+    height: 600px;
+    width:200px;
+}

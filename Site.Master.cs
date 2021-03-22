@@ -70,11 +70,23 @@ namespace Banking_System
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            CustomerSearch.Visible = false;
-            BECUST.Visible = false;
-            LoanPayment.Visible = false;
 
+           //this is for tellers
+            if (Session["Username"] != null )
+            {
+                if (Session["Role"].ToString() == "2")
 
+                CustomerSearch.Visible = true;
+                BECUST.Visible = false;
+                LoanPayment.Visible = false;
+            }
+
+            if (Session["Username"] == null)
+            {     //This is for anonymous user 
+                CustomerSearch.Visible = false;
+                BECUST.Visible = false;
+                LoanPayment.Visible = false;
+            }
         }
 
         protected void Unnamed_LoggingOut(object sender, LoginCancelEventArgs e)
@@ -82,11 +94,19 @@ namespace Banking_System
             Context.GetOwinContext().Authentication.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
         }
 
-        protected void LinkButton1_Click(object sender, EventArgs e)
+        protected void BECUST_Click(object sender, EventArgs e)
         {
             Response.Redirect("ClientFormJAT.aspx");
         }
 
+        protected void CustomerSearch_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Customer Search.aspx");
+        }
 
+        protected void LoanPayment_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("LoanPayment.aspx");
+        }
     }
 }

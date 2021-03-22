@@ -18,7 +18,51 @@ namespace Banking_System
 
         protected void Login_Button_Click(object sender, EventArgs e)
         {
-           
+            if (Page.IsValid) /* This is for server side validation if the client side validation is disabled*/
+            {
+
+                string CS = ConfigurationManager.ConnectionStrings["Banking_SystemConnectionString"].ConnectionString;
+                SqlConnection con = new SqlConnection(CS);
+                try
+                {
+                    SqlCommand cmd = new SqlCommand
+                   ("Execute sp_Login  '" + Txtemail.Text + "','" + TxtPassword.Text + "'", con);
+                    con.Open();
+                    int RoleReturnCode = (int)cmd.ExecuteScalar();
+
+
+
+
+                    if (RoleReturnCode > 0)
+                    {
+
+                        Session["Username"] = Txtemail.Text;
+                        Session["Role"] = RoleReturnCode.ToString();
+                        Txtemail.Text = "";
+                        TxtPassword.Text = "";
+                        Response.Redirect("~/Default.aspx");
+                    }
+                    else
+                    {
+                        LoginResult.Text = "Login Unsucessfull! ERROR 1392";
+                    }
+
+                }
+
+                catch
+                {
+
+                }
+                finally
+                {
+                    con.Close();
+
+                }
+
+
+
+
+            }
         }
     }
 }

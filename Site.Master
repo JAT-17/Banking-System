@@ -52,9 +52,9 @@
                         <li><a runat="server" href="~/">Home</a></li>
                         <li><a runat="server" href="~/About">About</a></li>
                         <li><a runat="server" href="~/Contact">Contact</a></li>
-                        <li><asp:LinkButton ID="BECUST" runat="server" OnClick="LinkButton1_Click">Become a Customer</asp:LinkButton></li>
-                        <li><asp:LinkButton ID="CustomerSearch" runat="server" OnClick="LinkButton1_Click">Customer Search</asp:LinkButton></li>
-                         <li><asp:LinkButton ID="LoanPayment" runat="server" OnClick="LinkButton1_Click">Loan Payment</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="BECUST" runat="server" OnClick="BECUST_Click" CausesValidation="false">Become a Customer</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="CustomerSearch" runat="server" OnClick="CustomerSearch_Click" CausesValidation="false" >Customer Search</asp:LinkButton></li>
+                         <li><asp:LinkButton ID="LoanPayment" runat="server" OnClick="LoanPayment_Click" CausesValidation="false">Loan Payment</asp:LinkButton></li>
                         
                     </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">

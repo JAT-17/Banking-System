@@ -214,6 +214,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Customer Search.aspx" />
+    <Content Include="DashBoard_Manager.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -409,6 +410,13 @@
     </Compile>
     <Compile Include="Customer Search.aspx.designer.cs">
       <DependentUpon>Customer Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DashBoard_Manager.aspx.cs">
+      <DependentUpon>DashBoard_Manager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DashBoard_Manager.aspx.designer.cs">
+      <DependentUpon>DashBoard_Manager.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
