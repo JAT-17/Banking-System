@@ -70,6 +70,10 @@ namespace Banking_System
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            CustomerSearch.Visible = false;
+            BECUST.Visible = false;
+            LoanPayment.Visible = false;
+
 
         }
 
@@ -77,6 +81,12 @@ namespace Banking_System
         {
             Context.GetOwinContext().Authentication.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
         }
-    }
 
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ClientFormJAT.aspx");
+        }
+
+
+    }
 }

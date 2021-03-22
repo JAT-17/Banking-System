@@ -16,11 +16,9 @@ namespace Banking_System
 
         }
 
-        protected void CustomerSearchSubmitButton_Click(object sender, EventArgs e)
+        protected void Login_Button_Click(object sender, EventArgs e)
         {
-
-            
-
+           
         }
     }
 }

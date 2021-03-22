@@ -33,12 +33,12 @@ namespace Banking_System
         protected global::System.Web.UI.WebControls.TextBox TxtPassword;
 
         /// <summary>
-        /// CustomerSearchSubmitButton control.
+        /// Login_Button control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button CustomerSearchSubmitButton;
+        protected global::System.Web.UI.WebControls.Button Login_Button;
     }
 }

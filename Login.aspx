@@ -36,17 +36,17 @@
                                 <div class="form-group">
                                     <asp:TextBox runat="server" CssClass="form-control" ID="Txtemail" placeholder="Email" ></asp:TextBox>
                                 </div>
-
+                                  
                                 <label>Password</label>
                                 <div class="form-group">
                                     <asp:TextBox ID="TxtPassword" CssClass="form-control" runat="server" placeholder="Password" TextMode="Password"  ></asp:TextBox>
                                 </div>
-                                 <asp:Button class="btn btn-info btn-block btn-lg" ID="CustomerSearchSubmitButton" runat="server" Text="Login Test" OnClick="CustomerSearchSubmitButton_Click" />
-                                 <input class="btn btn-info btn-block btn-lg" id="Login" type="button" value="Login" />
+                                 <asp:Button class="btn btn-info btn-block btn-lg" ID="Login_Button" runat="server" Text="Login" OnClick="Login_Button_Click" />
+                                
                                 
                                 <br />
                                  <div class="form-group">
-                                     <a href="RegisterUser.aspx"><input class="btn btn-info btn-block btn-lg" id="Register" type="button" value="Register" /></a>
+                                     <a href="Registration.aspx"><input class="btn btn-info btn-block btn-lg" id="Register" type="button" value="Register" /></a>
                                 </div>
                                 
                             </div>

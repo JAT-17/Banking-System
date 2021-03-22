@@ -52,14 +52,15 @@
                         <li><a runat="server" href="~/">Home</a></li>
                         <li><a runat="server" href="~/About">About</a></li>
                         <li><a runat="server" href="~/Contact">Contact</a></li>
-                        <li><a runat="server" href="~/ClientFormJAT">Become a Customer</a></li>
-                        <li><a runat="server" href="~/Customer Search">Customer Search</a></li>
-                        <li><a runat="server" href="~/LoanPayment">Loan Payment</a></li>
+                        <li><asp:LinkButton ID="BECUST" runat="server" OnClick="LinkButton1_Click">Become a Customer</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="CustomerSearch" runat="server" OnClick="LinkButton1_Click">Customer Search</asp:LinkButton></li>
+                         <li><asp:LinkButton ID="LoanPayment" runat="server" OnClick="LinkButton1_Click">Loan Payment</asp:LinkButton></li>
+                        
                     </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Account/Register">Register</a></li>
+                                <li><a runat="server" href="~/Registration">Register</a></li>
                                 <li><a runat="server" href="~/Login">Log in</a></li>
                             </ul>
                         </AnonymousTemplate>
