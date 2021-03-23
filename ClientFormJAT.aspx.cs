@@ -13,7 +13,12 @@ namespace Banking_System
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            //if (Session["Username"] == null)
+            //{
 
+            //    Response.Redirect("Login.aspx");
+
+            //}
         }
 
         protected void ClientFormContainerSubmitButton_Click(object sender, EventArgs e)
@@ -25,14 +30,14 @@ namespace Banking_System
                 SqlConnection con = new SqlConnection(CS);
                 try
                 {
+                    ClientFormSubmitResult.Text = "Before Executed";
                     SqlCommand cmd = new SqlCommand
-                   ("Execute sp_insert_customer  '" + TRN_TextBox.Text + "','" + BranchID_TextBox.Text + "' ,'" + FirstName_TextBox.Text + "'," +
-                   "'" + LastNameTextBox.Text + "','" + Address_TextBox.Text + "' ,'" + DOB_TextBox.Text + "',    " +
-                   "'" + Email_TextBox.Text + "' ,'" + DropDownList1.SelectedValue + "','" + ID_TextBox.Text + "' ," +
-                   "'" + Contact_TextBox.Text + "' ,'" + Referee_TextBox.Text + "' ", con);
+                   ("Execute sp_insert_customer  '" + TRN_TextBox.Text + "', '" + BranchID_TextBox.Text + "', '" + FirstName_TextBox.Text + "', '" + LastNameTextBox.Text + "', '" + Address_TextBox.Text + "' , '" + DOB_TextBox.Text + "', '" + Email_TextBox.Text + "' , '" + DropDownList1.SelectedValue + "', '" + ID_TextBox.Text + "' , '" + Contact_TextBox.Text + "' , '" + Referee_TextBox.Text + "' , '" + Type_Of_User_TextBox.Text + "', '" + PIN_TextBox.Text + "' ", con);
+                    ClientFormSubmitResult.Text = "Query Executed";
                     con.Open();
+                    ClientFormSubmitResult.Text = "Con open";
                     SqlDataReader rdr = cmd.ExecuteReader();
-
+                    ClientFormSubmitResult.Text = "Con read";
                     ClientFormSubmitResult.Text = "Data saved sucessfully";
                 }
 
@@ -47,12 +52,12 @@ namespace Banking_System
 
                 }
 
-            }else
-                {
+            }
+            else
+            {
                 ClientFormSubmitResult.Text = "Data not saved sucessfully";
             }
-        }    
-       
+        }        
         
     }
 }

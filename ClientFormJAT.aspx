@@ -78,7 +78,19 @@
             <br />
             <br />
 
+            <asp:Label ID="Type_Of_User" runat="server" Text="User:" CssClass="FormLabel"></asp:Label>
+            <asp:TextBox ID="Type_Of_User_TextBox" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidatorType_Of_User" runat="server" ErrorMessage=" Required" ControlToValidate="Type_Of_User_TextBox" SetFocusOnError="true" ForeColor="Red" Text="*"></asp:RequiredFieldValidator>
+            <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ErrorMessage="Invalid TRN" ControlToValidate="Type_Of_User_TextBox" SetFocusOnError="true" ForeColor="Red" ValidationExpression="\d{1}"></asp:RegularExpressionValidator>
+            <br />
+            <br />
 
+            <asp:Label ID="PIN_Label1" runat="server" Text="PIN:" CssClass="FormLabel"></asp:Label>
+            <asp:TextBox ID="PIN_TextBox" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidatorPIN" runat="server" ErrorMessage=" Required" ControlToValidate="PIN_TextBox" SetFocusOnError="true" ForeColor="Red" Text="*"></asp:RequiredFieldValidator>
+            <asp:RegularExpressionValidator ID="RegularExpressionValidatorPIN" runat="server" ErrorMessage="Invalid TRN" ControlToValidate="PIN_TextBox" SetFocusOnError="true" ForeColor="Red" ValidationExpression="\d{5}"></asp:RegularExpressionValidator>
+            <br />
+            <br />
 
     </section>
             <section class="FormContainerSubmit">

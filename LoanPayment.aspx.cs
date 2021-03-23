@@ -13,8 +13,13 @@ namespace Banking_System
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
+            if (Session["Username"] == null)
+            {
 
-		}
+                Response.Redirect("Login.aspx");
+
+            }
+        }
 
         protected void ClientFormContainerSubmitButton_Click(object sender, EventArgs e)
         {

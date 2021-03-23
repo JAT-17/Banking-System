@@ -15,31 +15,13 @@ namespace Banking_System
     {
 
         /// <summary>
-        /// BECUST control.
+        /// DashBoard_Manager control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton BECUST;
-
-        /// <summary>
-        /// CustomerSearch control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton CustomerSearch;
-
-        /// <summary>
-        /// LoanPayment control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LoanPayment;
+        protected global::System.Web.UI.WebControls.LinkButton DashBoard_Manager;
 
         /// <summary>
         /// MainContent control.

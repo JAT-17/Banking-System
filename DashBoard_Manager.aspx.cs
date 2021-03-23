@@ -11,7 +11,31 @@ namespace Banking_System
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["Username"] == null)
+            {
 
+                Response.Redirect("Login.aspx");
+
+            }
+
+
+
+        }
+
+
+        protected void BECUST_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ClientFormJAT.aspx");
+        }
+
+        protected void CustomerSearch_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Customer Search.aspx");
+        }
+
+        protected void LoanPayment_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("LoanPayment.aspx");
         }
     }
 }
