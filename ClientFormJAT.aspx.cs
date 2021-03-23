@@ -13,51 +13,64 @@ namespace Banking_System
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //if (Session["Username"] == null)
-            //{
+            if (Session["Username"] == null)
+            {
 
-            //    Response.Redirect("Login.aspx");
+                Response.Redirect("Login.aspx");
 
-            //}
+            }
         }
 
         protected void ClientFormContainerSubmitButton_Click(object sender, EventArgs e)
         {
-            if (Page.IsValid) /* This is for server side validation if the client side validation is disabled*/
-            {
+           
 
                 string CS = ConfigurationManager.ConnectionStrings["Banking_SystemConnectionString"].ConnectionString;
-                SqlConnection con = new SqlConnection(CS);
-                try
-                {
-                    ClientFormSubmitResult.Text = "Before Executed";
-                    SqlCommand cmd = new SqlCommand
-                   ("Execute sp_insert_customer  '" + TRN_TextBox.Text + "', '" + BranchID_TextBox.Text + "', '" + FirstName_TextBox.Text + "', '" + LastNameTextBox.Text + "', '" + Address_TextBox.Text + "' , '" + DOB_TextBox.Text + "', '" + Email_TextBox.Text + "' , '" + DropDownList1.SelectedValue + "', '" + ID_TextBox.Text + "' , '" + Contact_TextBox.Text + "' , '" + Referee_TextBox.Text + "' , '" + Type_Of_User_TextBox.Text + "', '" + PIN_TextBox.Text + "' ", con);
-                    ClientFormSubmitResult.Text = "Query Executed";
-                    con.Open();
-                    ClientFormSubmitResult.Text = "Con open";
-                    SqlDataReader rdr = cmd.ExecuteReader();
-                    ClientFormSubmitResult.Text = "Con read";
-                    ClientFormSubmitResult.Text = "Data saved sucessfully";
-                }
-
-                catch
-                {
-
-
-                }
-                finally
-                {
-                    con.Close();
-
-                }
-
-            }
-            else
+            using (SqlConnection con = new SqlConnection(CS))
             {
-                ClientFormSubmitResult.Text = "Data not saved sucessfully";
+                SqlCommand cmd = new SqlCommand("sp_insert_customer", con);
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@trn", TRN_TextBox.Text);
+                cmd.Parameters.AddWithValue("@b_id", BranchID_TextBox.Text);
+                cmd.Parameters.AddWithValue("@fname", FirstName_TextBox.Text);
+                cmd.Parameters.AddWithValue("@lname", LastName_TextBox.Text);
+                cmd.Parameters.AddWithValue("@add", Address_TextBox.Text);
+                cmd.Parameters.AddWithValue("@dob", DOB_TextBox.Text);
+                cmd.Parameters.AddWithValue("@email", Email_TextBox.Text);
+                cmd.Parameters.AddWithValue("@id_t", DropDownList1.Text);
+                cmd.Parameters.AddWithValue("@id", ID_TextBox.Text);
+                cmd.Parameters.AddWithValue("@pnum", Contact_TextBox.Text);
+                cmd.Parameters.AddWithValue("@ref", Referee_TextBox.Text);
+                cmd.Parameters.AddWithValue("@role", Type_Of_User_TextBox.Text);
+                cmd.Parameters.AddWithValue("@PIN", PIN_TextBox.Text);
+
+                con.Open();
+
+                int Success = cmd.ExecuteNonQuery();
+
+                if (Success == 1)
+                {
+                    TRN_TextBox.Text = "";
+                    BranchID_TextBox.Text = "";
+                    FirstName_TextBox.Text = "";
+                    LastName_TextBox.Text = "";
+                    Address_TextBox.Text = "";
+                    DOB_TextBox.Text = "";
+                    Email_TextBox.Text = "";
+                    DropDownList1.Text = "";
+                    ID_TextBox.Text = "";
+                    Contact_TextBox.Text = "";
+                    Referee_TextBox.Text = "";
+                    Type_Of_User_TextBox.Text = "";
+                    PIN_TextBox.Text = "";
+                    ClientFormSubmitResult.Text = " Saved sucessfully";
+                }
+                else
+                {
+                    ClientFormSubmitResult.Text = "Data not saved sucessfully";
+                }
             }
-        }        
-        
+        }
+
     }
 }

@@ -114,13 +114,13 @@ namespace Banking_System
         protected global::System.Web.UI.WebControls.Label LastName_Label;
 
         /// <summary>
-        /// LastNameTextBox control.
+        /// LastName_TextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox LastNameTextBox;
+        protected global::System.Web.UI.WebControls.TextBox LastName_TextBox;
 
         /// <summary>
         /// RequiredFieldValidatorLastName control.
@@ -330,15 +330,6 @@ namespace Banking_System
         protected global::System.Web.UI.WebControls.TextBox Type_Of_User_TextBox;
 
         /// <summary>
-        /// RequiredFieldValidatorType_Of_User control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorType_Of_User;
-
-        /// <summary>
         /// RegularExpressionValidator2 control.
         /// </summary>
         /// <remarks>
@@ -364,15 +355,6 @@ namespace Banking_System
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox PIN_TextBox;
-
-        /// <summary>
-        /// RequiredFieldValidatorPIN control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorPIN;
 
         /// <summary>
         /// RegularExpressionValidatorPIN control.
