@@ -86,7 +86,7 @@
 
             <asp:Label ID="PIN_Label1" runat="server" Text="PIN:" CssClass="FormLabel"></asp:Label>
             <asp:TextBox ID="PIN_TextBox" runat="server"></asp:TextBox>        
-            <asp:RegularExpressionValidator ID="RegularExpressionValidatorPIN" runat="server" ErrorMessage="Invalid TRN" ControlToValidate="PIN_TextBox" SetFocusOnError="true" ForeColor="Red" ValidationExpression="\d{5}"></asp:RegularExpressionValidator>
+            <asp:RegularExpressionValidator ID="RegularExpressionValidatorPIN" runat="server" ErrorMessage="Invalid Must be 5 digits" ControlToValidate="PIN_TextBox" SetFocusOnError="true" ForeColor="Red" ValidationExpression="\d{5}"></asp:RegularExpressionValidator>
             <br />
             <br />
 

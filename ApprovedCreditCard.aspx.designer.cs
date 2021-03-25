@@ -11,52 +11,34 @@ namespace Banking_System
 {
 
 
-    public partial class SiteMaster
+    public partial class ApprovedCreditCard
     {
 
         /// <summary>
-        /// DashBoard_Manager control.
+        /// CustomerSearchSubmitButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton DashBoard_Manager;
+        protected global::System.Web.UI.WebControls.Button CustomerSearchSubmitButton;
 
         /// <summary>
-        /// LoanPayment control.
+        /// SearchResult control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LoanPayment;
+        protected global::System.Web.UI.WebControls.Label SearchResult;
 
         /// <summary>
-        /// Signout control.
+        /// GridView2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton Signout;
-
-        /// <summary>
-        /// Welcome control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Welcome;
-
-        /// <summary>
-        /// MainContent control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+        protected global::System.Web.UI.WebControls.GridView GridView2;
     }
 }

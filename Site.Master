@@ -53,17 +53,34 @@
                         <li><a runat="server" href="~/About">About</a></li>
                         <li><a runat="server" href="~/Contact">Contact</a></li>
                         <li><asp:LinkButton ID="DashBoard_Manager" runat="server" OnClick="DashBoard_Manager_Click" CausesValidation="false">Dashboard</asp:LinkButton></li>
+                       <li><asp:LinkButton ID="LoanPayment" runat="server" OnClick="LoanPayment_Click" CausesValidation="false">Loan Payment</asp:LinkButton></li>
+                       <li><asp:LinkButton ID="Signout" runat="server" OnClick="Signout_Click" CausesValidation="false">Sign Out</asp:LinkButton></li>
+                      
+                        
+                        
+                   <asp:Label id="Welcome" class="Greetings" runat="server"></asp:Label>
+                   
                         <%--<li><asp:LinkButton ID="CustomerSearch" runat="server" OnClick="CustomerSearch_Click" CausesValidation="false" >Customer Search</asp:LinkButton></li>
-                         <li><asp:LinkButton ID="LoanPayment" runat="server" OnClick="LoanPayment_Click" CausesValidation="false">Loan Payment</asp:LinkButton></li>--%>
+                         --%>
                         
                     </ul>
+                     
+                    
+                   <%-- <asp:LinkButton ID="Registration" runat="server" OnClick="Registration_Click" CausesValidation="false">Register</asp:LinkButton>--%>
+                    
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Registration">Register</a></li>
-                                <li><a runat="server" href="~/Login">Log in</a></li>
+       
+                                <%--<li><asp:LinkButton ID="Registrationlinkbutton" runat="server" OnClick="Registration_Click" CausesValidation="false" viewstatemode="Disabled" >Register</asp:LinkButton></li>
+                                <li><asp:LinkButton ID="LoginCus" runat="server" OnClick="Login_Click" CausesValidation="false"  viewstatemode="Disabled" >Login</asp:LinkButton></li>--%>
+                                
+                                
+                                <li><a runat="server"  href="~/Registration">Register</a></li>
+                                <li><a runat="server"  href="~/Login">Log in</a></li>
                             </ul>
                         </AnonymousTemplate>
+
                         <LoggedInTemplate>
                             <ul class="nav navbar-nav navbar-right">
                                 <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %> !</a></li>
@@ -72,6 +89,7 @@
                                 </li>
                             </ul>
                         </LoggedInTemplate>
+
                     </asp:LoginView>
                 </div>
             

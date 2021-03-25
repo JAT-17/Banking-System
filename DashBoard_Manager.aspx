@@ -10,8 +10,13 @@
       &nbsp; &nbsp; <asp:LinkButton ID="CustomerSearch" runat="server" OnClick="CustomerSearch_Click" CausesValidation="false" >Customer Search</asp:LinkButton>
            <br />
      &nbsp; &nbsp;  <asp:LinkButton ID="LoanPayment" runat="server" OnClick="LoanPayment_Click" CausesValidation="false">Loan Payment</asp:LinkButton>
-       
-       
+        <br />
+     &nbsp; &nbsp;  <asp:LinkButton ID="CreditCardApproved" runat="server" OnClick="CreditCardApproved_Click" CausesValidation="false">Approved Credit Card listing</asp:LinkButton>
+       <br />
+    &nbsp; &nbsp;  <asp:LinkButton ID="Disbrusted" runat="server" OnClick="Disbrusted_Click" CausesValidation="false">Services Approved</asp:LinkButton>
+<br />
+    &nbsp; &nbsp;  <asp:LinkButton ID="MoneyTransfer" runat="server" OnClick="MoneyTransfer_Click" CausesValidation="false">Money Transfer</asp:LinkButton>
+
        </section>
 
    </div>

@@ -17,9 +17,6 @@ namespace Banking_System
                 Response.Redirect("Login.aspx");
 
             }
-
-
-
         }
 
 
@@ -37,5 +34,24 @@ namespace Banking_System
         {
             Response.Redirect("LoanPayment.aspx");
         }
+
+        protected void CreditCardApproved_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ApprovedCreditCard.aspx");
+        }
+
+        protected void Disbrusted_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("TotalLoanForPeriod.aspx");
+        }
+
+
+        protected void MoneyTransfer_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Money Transfer.aspx");
+        }
+
+
+        
     }
 }

@@ -18,6 +18,13 @@ namespace Banking_System
 
         protected void Login_Button_Click(object sender, EventArgs e)
         {
+           //if (Session["Username"] != null )
+           // {
+
+           //     Response.Redirect("~/Default.aspx");
+           // }
+            
+            
             if (Page.IsValid) /* This is for server side validation if the client side validation is disabled*/
             {
 
@@ -37,7 +44,7 @@ namespace Banking_System
                     {
 
                         Session["Username"] = Txtemail.Text;
-                        Session["Role"] = RoleReturnCode.ToString();
+                        Session["Role"] = Convert.ToString(RoleReturnCode);
                         Txtemail.Text = "";
                         TxtPassword.Text = "";
                         Response.Redirect("~/Default.aspx");

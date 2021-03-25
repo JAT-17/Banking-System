@@ -64,7 +64,7 @@
 
 div.FormContainer {
     margin: 0px auto;
-    width: 62%;
+    width: 61%;
     background-image: url('../Images/clientFormBackground.png');
     height: auto;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -83,7 +83,7 @@ section.FormContainerTitle {
 
 .FormSection_Datainput
 {
-    margin-left:100px;
+    margin-left: 120px;
     width:auto;
 }
 
@@ -176,3 +176,22 @@ section.Panel {
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
 }
+
+
+
+/*This is for the welcome text in the nav bar when a user logs in*/
+navbar-collapse collapse 
+{
+    position:relative;
+}
+
+span#Welcome {
+    position: absolute;
+    top: 15px;
+    left: 900px;
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: 800;
+    color:black;
+}
+6

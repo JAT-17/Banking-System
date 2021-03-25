@@ -71,26 +71,49 @@ namespace Banking_System
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            if ((Session["Username"] != null) && (Session["Role"].ToString() == "1"))
+             if (Convert.ToInt32(Session["Role"]) == 1)
+
+              {
+               
+                Welcome.Text = "Welcome: " + Convert.ToString(Session["Username"]);
+                DashBoard_Manager.Visible = true;
+                LoanPayment.Visible = false;
+                Signout.Visible = true;
+                
+
+
+             }
+
+            if (Convert.ToInt32(Session["Role"]) == 2)
+
             {
 
+                Welcome.Text = "Welcome: " + Convert.ToString(Session["Username"]);
                 DashBoard_Manager.Visible = true;
-          
+                LoanPayment.Visible = false;
+                Signout.Visible = true;
             }
 
+            if (Convert.ToInt32(Session["Role"]) == 3)
 
-            ////this is for tellers
-            //if ((Session["Username"] != null) && (Session["Role"].ToString() == "2"))
-            //{
+            {
 
-            //    CustomerSearch.Visible = true;
-            //    BECUST.Visible = false;
-            //    LoanPayment.Visible = false;
-            //}
+                Welcome.Text = "Welcome: " + Convert.ToString(Session["Username"]);
+                DashBoard_Manager.Visible = false;
+                LoanPayment.Visible = true;
+                Signout.Visible = true;
+
+            }
+
 
             if (Session["Username"] == null)
             {     //This is for anonymous user 
                 DashBoard_Manager.Visible = false;
+                LoanPayment.Visible = false;
+                Signout.Visible = false;
+               
+
+
             }
         }
 
@@ -104,5 +127,28 @@ namespace Banking_System
         {
             Response.Redirect("DashBoard_Manager.aspx");
         }
+
+
+        protected void LoanPayment_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("LoanPayment.aspx");
+        }
+
+        protected void Disbrusted_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("TotalLoanForPeriod.aspx");
+        }
+
+        protected void Signout_Click(object sender, EventArgs e)
+        {
+            Session.Abandon();
+            Response.Redirect("Default.aspx");
+        }
+
+        //protected void Login_Click(object sender, EventArgs e)
+        //{
+        //    Response.Redirect("Login.aspx");
+        //}
+
     }
 }
